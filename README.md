@@ -11,6 +11,10 @@ Although the original concept was about glueing together cloud services, it has 
 A service composer can't do anything at all without some services to compose. The examples folder contains some very simple service provider examples and a web service and web client that interact with them. Using two command line terminals (one for the dispatcher and one for the web service), here's how you run them:
 
 ```sh
+// first build the service provider examples
+cd examples/services
+gleam build
+
 // start the web client
 cd examples/web_client
 gleam run -m lustre/dev start
