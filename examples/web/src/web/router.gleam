@@ -40,6 +40,10 @@ import youid/uuid
 const known_recipes = [
   RecipeEntry("Simple calc", "calc"),
   RecipeEntry("Calc with plus operator", "calc operator:+"),
+  RecipeEntry(
+    "Square root of 3x + 2",
+    "sqrt arg:(calc operator:+ operand1:(calc operator:* operand1:3) operand2:2)",
+  ),
 ]
 
 type SocketState {
